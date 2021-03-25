@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400;1,600&display=swap" rel="stylesheet">
     <title>Library Ideas</title>
 </head>
 <body>
@@ -32,7 +34,7 @@
             </main>
             <section id="buttons">
 
-                <button class="add"> + Adicicionar Livro</button>
+                <button onclick="onOff()" class="add"> + Adicicionar Livro</button>
         
                 <button class="fat"> Ver Livros</button>
 
@@ -91,8 +93,50 @@
 
         </section>
 
+        <footer>
+            <p>"A leitura engrandece a alma." Voltaire</p>
+         </footer>
+
+         <!-- MODAL-->
+         <div id="modal" class="hide">
+            <div class="content">
+
+                <h1>NOVO LIVRO</h1>
+
+                <form action="">
+                
+                    <div class="input-wrapper">
+
+                        <label for="title">Título do Livro</label>
+                        <input type="text" name="title">
+
+                    </div>
+                
+                    <div class="input-wrapper">
+
+                        <label for="autor">Autor</label>
+                        <input type="text" name="autor">
+
+                    </div>
+
+                    <div class="input-wrapper">
+
+                        <label for="description">Digite sua opinião sobre o livro</label>
+                        <textarea name="description" cols="30" rows="10"></textarea>
+
+                    </div>
+
+                    <a href="#" onclick="onOff()">Voltar</a>
+                    <button>Salvar</button>
+   
+                
+                </form>
+            </div>
+
+         </div>
     </div>
 
+   
 
     <script src="scripts/scripts.js"></script>
 
