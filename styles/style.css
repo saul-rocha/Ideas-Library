@@ -1,0 +1,123 @@
+
+
+body{
+
+    font-size: 14px;
+
+    background-color: #E5E5E5;
+   
+    margin: auto;
+
+    width: 980px;
+    color: #252828;
+
+}
+strong{
+    color: #00CED1;
+}
+
+header{
+    height: 230px;
+
+    margin-left: 4px;
+
+}
+
+main{
+
+    font-size: 16px;
+
+    width: 260px;
+
+    text-align: center;
+    color: #8B4513;
+
+    margin: auto;
+
+}
+
+
+#conteiner{
+    width: 90%;
+    max-width: 900px;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+
+    background: #F5FFFA;
+    
+    display: block;
+
+}
+
+#intro{
+    margin-top: 4px;
+
+    height: 230px;
+
+    background: #FFFFFF;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    border-radius: 5px;
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+button {
+    color: #00CED1;
+
+    border: none;
+
+    font-weight: bold;
+
+    background: none;
+
+    text-align: center;
+
+    
+
+
+}
+#buttons{
+    font-size: 14px;
+
+    width: 150px;
+    height: 225px;
+
+    display: flex;
+    flex-direction: column;
+ 
+
+}
+
+.add{
+    width: 150px;
+    color: #8B4513;
+
+
+    margin: auto;
+}
+
+.fat{
+    width: 100px;
+    height: 30px;
+
+    margin: auto;
+    color: #8B4513;
+    background: #00CED1;
+
+    
+}
+
+
+header .logo{
+    width: 230px;
+    height: 230px;
+}
+
+.hide {
+    display: none;
+}
