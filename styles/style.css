@@ -13,6 +13,11 @@ body{
     color: #252828;
 
 }
+
+body.hideScroll{
+    overflow: hidden;
+}
+
 strong{
     color: #00CED1;
 }
@@ -29,8 +34,6 @@ header .logo{
 }
 
 main{
-
-
 
     width: 260px;
 
@@ -72,7 +75,7 @@ footer p{
 
     opacity: 0.9;
 
-    margin:auto 32px auto auto;
+    margin:32px 32px auto auto;
 }
 #conteiner{
     width: 90%;
@@ -154,16 +157,23 @@ button.add{
 .fat{
     
     width: 100px;
-    height: 40px;
+    height: 0px;
 
     margin: auto;
 
-    color: #8B4513;
-    background: #00CED1;
+    color: #00CED1;
+    
 
     border-radius: 6px;
 
     box-shadow: 0px 8px 16px #00CED122 ;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    text-align: center;
+
     
 }
 
@@ -171,10 +181,6 @@ button.add{
     text-decoration: none;
 }
 
-
-.last-books{
-    
-}
 
 
 .book{
@@ -203,9 +209,17 @@ button.add{
     margin: 0;
 }
 
-.book p{
+.book h2{
     margin: 8px 0;
     color: #777;
+
+    font-size: 14px;
+}
+
+.book p{
+    font-size: 14px;
+
+    color: #252828;
 }
 
 .book description{
@@ -231,9 +245,13 @@ button.add{
 
 }
 
+#modal.addScroll{
+    overflow: auto;
+}
+
 
 #modal .content{
-    margin-top: 128px;
+    margin-top: 15%;
 
     color: #FFFFFF;
 }
@@ -247,7 +265,7 @@ button.add{
     width: 80%;
     max-width: 800px;
 
-    margin: 0 auto;
+    margin: 0 auto 15%;
 
     display: grid;
 
@@ -343,3 +361,121 @@ form button:hover{
     opacity: 0;
     visibility: hidden;
 }
+
+/* livros.html*/
+#page-books #conteiner {
+    display: block;
+}
+#page-books header {
+    background: #FFFFFF;
+    margin: 0;
+
+    display: flex;
+    justify-content: space-between;
+
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    border-radius: 5px;
+}
+#page-books .logo{
+    margin-left:4px ;
+}
+#page-books nav{
+
+    display: flex;
+    align-items: center;
+}
+
+#page-books nav li{
+    list-style-type: none;
+
+
+    margin-right: 16px;
+}
+#page-books nav li a{
+    color: #8B4513;
+    font-weight: bold;
+
+    text-decoration: none;
+}
+
+#page-books nav li a:hover{
+    color: #00CED1;
+
+    text-decoration: none;
+}
+
+#page-books nav li:last-child{
+    margin: 12px;
+
+    
+}
+
+#page-books nav li:last-child a:hover{
+    background-color: #8B4513;
+    color: #00CED1;
+
+    text-decoration: none;
+}
+
+#page-books nav li:last-child a{
+    width: 150px;
+    height: 30px;
+
+    background-color: #00CED1;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 6px;
+
+    color: #8B4513;
+
+}
+
+section#title{
+    text-align: center;
+
+    margin: 39px 39px;
+
+}
+section#title p{
+    opacity: 0.7;
+    margin: 0;
+}
+section#title h1{
+    margin: 0;
+
+    font-size: 28px;
+}
+
+section#livros {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 5px;
+}
+
+section#livros .book{
+    display: flex;
+
+
+    width: 360px;
+
+    margin: 3px auto;
+
+
+    padding: 10px;
+}
+
+
+section#livros .book img{
+    width: 90px;
+    height: 90px;
+
+    margin: auto 10px;
+}
+
